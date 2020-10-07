@@ -70,7 +70,7 @@ select{
 #tableSection{
     float: right;
     background-color:  rgba(169,169,169, 0.9); /*darkgray in rgba*/
-    margin-right: 300px;
+    margin-right: 200px;
     width: 19cm;
     height: 11.5cm;
     border-radius: 8px;
