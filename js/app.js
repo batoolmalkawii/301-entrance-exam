@@ -7,6 +7,7 @@ function Device(name, category, quantity) {
   this.category = category;
   this.price = getRandNum(350, 750);
   this.quantity = quantity;
+  totalPrice += quantity*this.price;
   Device.all.push(this);
 }
 Device.all = [];
@@ -64,8 +65,6 @@ function render() {
     let tdElPrice = document.createElement('td');
     trEl.appendChild(tdElPrice);
     tdElPrice.textContent = existingLocalStorage[i].price;
-    let devicePrice = existingLocalStorage[i].quantity * existingLocalStorage[i].price;
-    totalPrice = totalPrice + devicePrice;
     let tdElCategory = document.createElement('td');
     trEl.appendChild(tdElCategory);
     tdElCategory.textContent = existingLocalStorage[i].category;
