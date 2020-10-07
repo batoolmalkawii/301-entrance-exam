@@ -7,7 +7,7 @@ function Device(name, category, quantity) {
   this.category = category;
   this.price = getRandNum(350, 750);
   this.quantity = quantity;
-  totalPrice += quantity*this.price;
+  totalPrice = Number(totalPrice) + quantity*this.price;
   Device.all.push(this);
 }
 Device.all = [];
@@ -22,7 +22,7 @@ function handleSubmit(event) {
   let quantity = event.target.quantity.value;
   let device = new Device(name, category, quantity);
   saveToLocalStorage(device);
-
+  localStorage.setItem('Total', JSON.stringify(totalPrice));
   render();
 }
 
@@ -33,6 +33,7 @@ function saveToLocalStorage(device) {
 
 function getFromLocalStorage() {
   existingLocalStorage = JSON.parse(localStorage.getItem('Devices')) || [];
+  totalPrice = JSON.parse(localStorage.getItem('Total')) || [];
 }
 
 
