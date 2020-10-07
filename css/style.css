@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(93, 93, 93);
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+main{
+    margin-top: 250px;
+}
+
+#formSection{
+    float: left;
+    background-color: rgba(169,169,169, 0.9); /*darkgray in rgba*/
+    width: 9cm;
+    height: 12cm;
+    font-size: 25px;
+    margin-left: 220px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#form{
+    padding-top: 70px;
+}
+
+input{
+    margin-bottom: 30px;
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+select{
+    margin-bottom: 30px;
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#submit{
+    width: 70%;
+    border: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+    background-color: rgb(93, 93, 93);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#tableSection{
+    float: right;
+    background-color:  rgba(169,169,169, 0.9); /*darkgray in rgba*/
+    margin-right: 300px;
+    width: 19cm;
+    height: 11.5cm;
+    border-radius: 8px;
+}
+
+table{
+    background-color: #F5F5DC;
+    opacity: 0.8;
+    width: 17cm;
+    margin-left: 35px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+th, tr, td{
+    border: 2.5px solid  rgba(169,169,169, 0.9);
+}
+
+th{
+    font-weight: bold;
+}
+
+th, td{
+    height: 5px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
