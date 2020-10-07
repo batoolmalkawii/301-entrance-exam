@@ -22,6 +22,7 @@ function handleSubmit(event) {
   let quantity = event.target.quantity.value;
   let device = new Device(name, category, quantity);
   saveToLocalStorage(device);
+
   render();
 }
 
@@ -33,6 +34,7 @@ function saveToLocalStorage(device) {
 function getFromLocalStorage() {
   existingLocalStorage = JSON.parse(localStorage.getItem('Devices')) || [];
 }
+
 
 function render() {
   formEl.reset();
